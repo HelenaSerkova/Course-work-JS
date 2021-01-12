@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/design.css">
+    <script src="js/library/jquery-3.5.1.js" charset="utf-8"></script>
+    <title>Отображение задач</title>
+  </head>
+  <body>
+    <div>
+      <a href="addtask.html"> <<<<<Добавить задачу</a>
+    </div><br>
+
+
+        <div class="sort">
+          <h2>Просмотр задач</h2>
+          <input id="sorttask" class="sorttask"  type="button" name="newtasks" value="Сначала ближайшие">
+          <input id="othersort" class="othersort" type="button" name="oldtasks" value="Сначала дальние">
+
+        </div>
+
+
+        <div class="other" id="tasks"></div>
+        <div class="notesnone">
+            <p>Нет ни одной задачи</p>
+        </div>
+
+      <br><button id="reset" class="reset" type="button" name="button">Удалить задачу</button>
+
+    <script src="js/gettsk.js"></script>
+  </body>
+</html>

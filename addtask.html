@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/design.css">
+    <script src="js/library/jquery-3.5.1.js" charset="utf-8"></script>
+    <title>Добавление задач</title>
+  </head>
+  <body>
+    <div>
+      <a href="gettask.html">Посмотреть задачи</a>
+    </div><br>
+
+    <div class="taskadd">
+      <form class="formvalid">
+        <h2>Добавление задачи</h2>
+        <fieldset>
+
+            <legend>Заполните форму</legend>
+            <label>
+              Наименование задачи:
+              <input name = "nametask" type="text" placeholder="Не менее 3 символов" required class="nametask"  autofocus><br>
+              Описание задачи:
+              <input name = "description" class="description" type="textarea" placeholder="Не менее 3 символов">
+              <br>
+              Дата исполнения задачи:
+              <input type="date"  name="date" class = "datetask" required>
+              <br>
+              <section class="addingactor">
+              <button type="button" name="button" class="addingactors">Добавить участников</button>
+              <section class="hover">
+                <br>Введите участников через запятую
+                <br><input name="actors" type="text" placeholder="Не менее 3 символов" class="actors">
+              </section>
+              </section>
+            </label>
+        </fieldset>
+        <input type="submit" value="Отправить" class="validbtn">
+        <input type="reset" value="Очистить">
+
+      </form>
+    </div>
+    <script src="js/addtsk.js"></script>
+
+  </body>
+</html>
